@@ -1,0 +1,134 @@
+.pagetitle {
+    padding: 22px 0 10px 0;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 22px;
+}
+
+.pagetitle h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 4px;
+}
+
+.formtoc {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-left: 3px solid #003366;
+}
+
+.formtoc h5 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.formtoc ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.formtoc li {
+    margin-bottom: 4px;
+}
+
+.formtoc a {
+    color: #003366;
+    font-size: 14px;
+}
+
+.formtoc a:hover {
+    color: #f5a623;
+}
+
+.formwrap {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.formwrap h4 {
+    color: #003366;
+    margin-bottom: 17px;
+}
+
+.formwrap .form-label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.formwrap .form-control,
+.formwrap .form-select {
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+/* last form has no bottom border */
+.formwrap-last {
+    border-bottom: none;
+}
+
+/* submit buttons */
+.subbtn {
+    background-color: #f5a623;
+    color: #222222;
+    border: none;
+    padding: 8px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.subbtn:hover {
+    background-color: #e09400;
+}
+
+/* calculator button */
+.calcbtn {
+    background-color: #f5a623;
+    color: #222222;
+    border: none;
+    padding: 8px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.calcbtn:hover {
+    background-color: #e09400;
+}
+
+/* laundry inputs */
+.laundry-qty {
+    width: 160px;
+}
+
+.laundry-type {
+    width: 240px;
+}
+
+/* checkin date input */
+.checkin-input {
+    width: 220px;
+}
+
+#calcresult {
+    margin-top: 11px;
+    font-size: 15px;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* live password match */
+.matchmsg {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* login hint text */
+.hinttxt {
+    font-size: 12px;
+    color: #777777;
+    margin-top: 3px;
+    display: none;
+}

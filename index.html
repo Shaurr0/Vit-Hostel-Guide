@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Hostel Guide - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg topbar sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">VIT Hostel Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="./forms.html">Forms</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="./forms.html">Forms</a></li>
+                        <li><a class="dropdown-item" href="./about.html">About</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="mainbox">
+
+    <div class="pagetitle">
+        <h2>Hostel Information</h2>
+        <p>A student-made guide to VIT hostels.</p>
+    </div>
+
+    <div class="tablearea">
+        <h4>Hostel Blocks Overview</h4>
+        <table class="table table-bordered table-sm">
+            <thead class="tblhead-dark">
+                <tr>
+                    <th>Block Name</th>
+                    <th>Type</th>
+                    <th>Capacity</th>
+                    <th>Warden Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Block A</td>
+                    <td>Boys</td>
+                    <td>240</td>
+                    <td>9876543210</td>
+                </tr>
+                <tr>
+                    <td>Block R</td>
+                    <td>Boys</td>
+                    <td>220</td>
+                    <td>9876543211</td>
+                </tr>
+                <tr>
+                    <td>Block C</td>
+                    <td>Girls</td>
+                    <td>260</td>
+                    <td>9876543212</td>
+                </tr>
+                <tr>
+                    <td>Block J</td>
+                    <td>Girls</td>
+                    <td>200</td>
+                    <td>9876543213</td>
+                </tr>
+                <tr>
+                    <td>Block E</td>
+                    <td>Boys</td>
+                    <td>180</td>
+                    <td>9876543214</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="secblock">
+        <h4>Block Details</h4>
+        <div class="blockdiv block-a">
+            <h5>A block (MHA)</h5>
+            <p>This is the oldest and first hostel block, built when vit was first established, has undergone many renovations to be upto date.Closer to academics block for mechanical and civil students.5 floors block</p>
+        </div>
+        <div class="blockdiv block-b">
+            <h5>R Block (MHR)</h5>
+            <p>R block is a newer hostel block built in 2019. It has apartment type rooms, has 5 different wings from A-E, each wing has 3 different rooms, and those 4 rooms get to share one washroom and one couch too.Overall on the expensive side.18 floors block</p>
+        </div>
+        <div class="blockdiv block-c">
+            <h5>J Block (LHJ) [Girls Block]</h5>
+            <p>The J block girls hostel is also a new entry, established in 2023. Entry is restricted after 9 PM.This one also offers Apartment type rooms, it is near to the main gate .</p>
+        </div>
+    </div>
+    <div class="messsec">
+        <h4>Mess Status</h4>
+        <div id="messStatusText" class="statusopen">Mess Status: Open</div>
+        <button class="togglebtn" id="toggleBtn" onclick="toggleStatus()">Toggle Status</button>
+    </div>
+    <div class="dasharea">
+        <h4>Hostel Dashboard</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="dashbox">
+                    <div class="dnum">240</div>
+                    <div class="dlabel">Total Rooms</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashbox">
+                    <div class="dnum">198</div>
+                    <div class="dlabel">Occupancy</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="dashbox">
+                    <div class="dnum">12</div>
+                    <div class="dlabel">Complaints Open</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lbtable">
+        <h4>Inter hostel sports leaderboard winners: </h4>
+        <table class="table table-bordered table-sm">
+            <thead class="tblhead-yellow">
+                <tr>
+                    <th>Rank</th>
+                    <th>Student Name</th>
+                    <th>Block</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1st</td>
+                    <td>Shaurya Pandey</td>
+                    <td>A block</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>Ashwin L</td>
+                    <td>R block</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>Jaskirat Singh</td>
+                    <td>A block</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="profsec">
+        <h4>Student Profile</h4>
+        <div class="profcard">
+            <div class="profinner">
+                <img src="../css/images/profile.jpeg" alt="Profile Photo" class="profimg">
+                <div class="profdetails">
+                    <h5>Student ID Card</h5>
+                    <table class="table table-sm table-bordered proftable">
+                        <tbody>
+                            <tr><td class="profkey"><strong>Name</strong></td><td>Shaurya Pandey</td></tr>
+                            <tr><td class="profkey"><strong>Reg. Number</strong></td><td>24BCE0738</td></tr>
+                            <tr><td class="profkey"><strong>Block</strong></td><td>Block A</td></tr>
+                            <tr><td class="profkey"><strong>Room Number</strong></td><td>J-514</td></tr>
+                            <tr><td class="profkey"><strong>Course</strong></td><td>B.Tech CSE</td></tr>
+                            <tr><td class="profkey"><strong>Year</strong></td><td>2nd Year</td></tr>
+                            <tr><td class="profkey"><strong>Email</strong></td><td>shaurya.pandey2024@vit.ac.in</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <p class="skillstitle"><strong>Skills</strong></p>
+        <ul class="skillslist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+        </ul>
+
+        <button class="editbtn" onclick="toggleEdit()">Edit Details</button>
+        <div id="editmsg"></div>
+    </div>
+
+</div>
+<div class="pagefooter">
+    VIT Hostel Guide &mdash; 2025
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/home.js"></script>
+</body>
+</html>
+
+

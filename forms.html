@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Hostel Guide - Forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg topbar sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">VIT Hostel Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./forms.html">Forms</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="./forms.html">Forms</a></li>
+                        <li><a class="dropdown-item" href="./about.html">About</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="mainbox">
+
+    <div class="pagetitle">
+        <h2>Hostel Forms</h2>
+    </div>
+
+    <div class="formtoc">
+        <h5>Forms on this page</h5>
+        <ul>
+            <li><a href="#studreg">Student Registration</a></li>
+            <li><a href="#loginform">Login</a></li>
+            <li><a href="#changepwd">Change Password</a></li>
+            <li><a href="#roombooking">Room Booking</a></li>
+            <li><a href="#messreg">Mess Registration</a></li>
+            <li><a href="#complaint">Maintenance Complaint</a></li>
+            <li><a href="#contactform">Contact / Feedback</a></li>
+            <li><a href="#laundry">Laundry Cost Calculator</a></li>
+        </ul>
+    </div>
+
+    <div class="formwrap" id="studreg">
+        <h4>Student Registration</h4>
+        <form novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sr_fname">First Name</label>
+                    <input type="text" class="form-control" id="sr_fname">
+                    <div class="errmsg" id="err_sr_fname"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sr_lname">Last Name</label>
+                    <input type="text" class="form-control" id="sr_lname">
+                    <div class="errmsg" id="err_sr_lname"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="sr_email">Email Address</label>
+                <input type="text" class="form-control" id="sr_email">
+                <div class="errmsg" id="err_sr_email"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="sr_phone">Phone Number</label>
+                <input type="text" class="form-control" id="sr_phone">
+                <div class="errmsg" id="err_sr_phone"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sr_block">Block</label>
+                    <select class="form-select" id="sr_block">
+                        <option value="">Select Block</option>
+                        <option value="A">Block A</option>
+                        <option value="B">Block B</option>
+                        <option value="C">Block C</option>
+                        <option value="D">Block D</option>
+                    </select>
+                    <div class="errmsg" id="err_sr_block"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label" for="sr_room">Room Number</label>
+                    <input type="text" class="form-control" id="sr_room">
+                    <div class="errmsg" id="err_sr_room"></div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="sr_year">Year of Study</label>
+                <select class="form-select" id="sr_year">
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+                <div class="errmsg" id="err_sr_year"></div>
+            </div>
+            <button type="submit" class="subbtn">Submit</button>
+            <div class="successmsg" id="suc_studreg"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="loginform">
+        <h4>Login</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="log_user">Username or Email</label>
+                <input type="text" class="form-control" id="log_user">
+                <div class="hinttxt" id="log_userhint">Enter your VIT email or username</div>
+                <div class="errmsg" id="err_log_user"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="log_pwd">Password</label>
+                <input type="password" class="form-control" id="log_pwd">
+                <div class="errmsg" id="err_log_pwd"></div>
+            </div>
+            <button type="submit" class="subbtn">Login</button>
+            <div class="successmsg" id="suc_login"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="changepwd">
+        <h4>Change Password</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="cp_current">Current Password</label>
+                <input type="password" class="form-control" id="cp_current">
+                <div class="errmsg" id="err_cp_current"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cp_new">New Password</label>
+                <input type="password" class="form-control" id="cp_new">
+                <div class="errmsg" id="err_cp_new"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cp_confirm">Confirm New Password</label>
+                <input type="password" class="form-control" id="cp_confirm">
+                <div class="matchmsg" id="cp_matchmsg"></div>
+                <div class="errmsg" id="err_cp_confirm"></div>
+            </div>
+            <button type="submit" class="subbtn">Change Password</button>
+            <div class="successmsg" id="suc_changepwd"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="roombooking">
+        <h4>Room Booking</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="rb_name">Full Name</label>
+                <input type="text" class="form-control" id="rb_name">
+                <div class="errmsg" id="err_rb_name"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="rb_email">Email</label>
+                <input type="text" class="form-control" id="rb_email">
+                <div class="errmsg" id="err_rb_email"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Block</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_block" id="rb_block_a" value="A">
+                    <label class="form-check-label" for="rb_block_a">Block A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_block" id="rb_block_b" value="B">
+                    <label class="form-check-label" for="rb_block_b">Block B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_block" id="rb_block_c" value="C">
+                    <label class="form-check-label" for="rb_block_c">Block C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_block" id="rb_block_d" value="D">
+                    <label class="form-check-label" for="rb_block_d">Block D</label>
+                </div>
+                <div class="errmsg" id="err_rb_block"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Room Type</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_type" id="rb_single" value="Single">
+                    <label class="form-check-label" for="rb_single">Single</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rb_type" id="rb_double" value="Double">
+                    <label class="form-check-label" for="rb_double">Double</label>
+                </div>
+                <div class="errmsg" id="err_rb_type"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="rb_checkin">Check-in Date</label>
+                <input type="date" class="form-control checkin-input" id="rb_checkin">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="rb_special">Special Requests</label>
+                <textarea class="form-control" id="rb_special" rows="3" placeholder="Any special requirements..."></textarea>
+            </div>
+            <button type="submit" class="subbtn">Submit Booking</button>
+            <div class="successmsg" id="suc_roombooking"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="messreg">
+        <h4>Mess Registration</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="mr_name">Student Name</label>
+                <input type="text" class="form-control" id="mr_name">
+                <div class="errmsg" id="err_mr_name"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mr_regno">Registration Number</label>
+                <input type="text" class="form-control" id="mr_regno">
+                <div class="errmsg" id="err_mr_regno"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Meal Plan</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mr_meal" id="mr_veg" value="Veg">
+                    <label class="form-check-label" for="mr_veg">Veg</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mr_meal" id="mr_nonveg" value="Non-Veg">
+                    <label class="form-check-label" for="mr_nonveg">Non-Veg</label>
+                </div>
+                <div class="errmsg" id="err_mr_meal"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Preferred Timing</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mr_timing" id="mr_early" value="Early">
+                    <label class="form-check-label" for="mr_early">Early (7:30 AM)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mr_timing" id="mr_regular" value="Regular">
+                    <label class="form-check-label" for="mr_regular">Regular (8:30 AM)</label>
+                </div>
+                <div class="errmsg" id="err_mr_timing"></div>
+            </div>
+            <button type="submit" class="subbtn">Register</button>
+            <div class="successmsg" id="suc_messreg"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="complaint">
+        <h4>Maintenance Complaint</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="mc_name">Student Name</label>
+                <input type="text" class="form-control" id="mc_name">
+                <div class="errmsg" id="err_mc_name"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mc_room">Room Number</label>
+                <input type="text" class="form-control" id="mc_room">
+                <div class="errmsg" id="err_mc_room"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mc_block">Block</label>
+                <select class="form-select" id="mc_block">
+                    <option value="">Select Block</option>
+                    <option value="A">Block A</option>
+                    <option value="B">Block B</option>
+                    <option value="C">Block C</option>
+                    <option value="D">Block D</option>
+                </select>
+                <div class="errmsg" id="err_mc_block"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mc_issue">Issue Type</label>
+                <select class="form-select" id="mc_issue">
+                    <option value="">Select Issue</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Plumbing">Plumbing</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="errmsg" id="err_mc_issue"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mc_desc">Description</label>
+                <textarea class="form-control" id="mc_desc" rows="4" placeholder="Describe the issue in detail..."></textarea>
+                <div class="errmsg" id="err_mc_desc"></div>
+            </div>
+            <button type="submit" class="subbtn">Submit Complaint</button>
+            <div class="successmsg" id="suc_complaint"></div>
+        </form>
+    </div>
+
+    <div class="formwrap" id="contactform">
+        <h4>Contact / Feedback</h4>
+        <form novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="cf_name">Full Name</label>
+                <input type="text" class="form-control" id="cf_name">
+                <div class="errmsg" id="err_cf_name"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cf_email">Email</label>
+                <input type="text" class="form-control" id="cf_email">
+                <div class="errmsg" id="err_cf_email"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cf_subject">Subject</label>
+                <input type="text" class="form-control" id="cf_subject">
+                <div class="errmsg" id="err_cf_subject"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cf_msg">Message</label>
+                <textarea class="form-control" id="cf_msg" rows="5"></textarea>
+                <div class="errmsg" id="err_cf_msg"></div>
+            </div>
+            <button type="submit" class="subbtn">Send</button>
+            <div class="successmsg" id="suc_contact"></div>
+        </form>
+    </div>
+
+    <div class="formwrap formwrap-last" id="laundry">
+        <h4>Laundry Cost Calculator</h4>
+        <div class="mb-3">
+            <label class="form-label" for="lc_qty">Number of Items</label>
+            <input type="number" class="form-control laundry-qty" id="lc_qty" min="1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="lc_type">Item Type</label>
+            <select class="form-select laundry-type" id="lc_type">
+                <option value="">Select Item</option>
+                <option value="shirt">Shirt - Rs.10</option>
+                <option value="pant">Pant - Rs.15</option>
+                <option value="bedsheet">Bedsheet - Rs.25</option>
+            </select>
+        </div>
+        <button class="calcbtn" onclick="calcTotal()">Calculate</button>
+        <div id="calcresult"></div>
+    </div>
+
+</div>
+
+<div class="pagefooter">
+    VIT Hostel Guide &mdash; 2025
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/forms.js"></script>
+</body>
+</html>
+
+

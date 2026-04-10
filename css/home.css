@@ -1,0 +1,218 @@
+.pagetitle {
+    padding: 22px 0 10px 0;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 20px;
+}
+
+.pagetitle h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 4px;
+}
+
+.pagetitle p {
+    font-size: 14px;
+    color: #555555;
+    margin: 0;
+}
+
+.tablearea {
+    margin-bottom: 30px;
+}
+
+.tablearea h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.secblock {
+    margin-bottom: 30px;
+}
+
+.secblock h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.blockdiv {
+    height: 200px;
+    padding: 18px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.blockdiv h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.block-a {
+    background-color: #e8f0fe;
+    border-left: 4px solid #003366;
+}
+
+.block-b {
+    background-color: #fff3cd;
+    border-left: 4px solid #f5a623;
+}
+
+.block-c {
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+}
+
+/* mess status */
+.messsec {
+    margin-bottom: 30px;
+    padding: 17px;
+    border: 1px solid #cccccc;
+    background-color: #f9f9f9;
+}
+
+.messsec h4 {
+    color: #003366;
+    margin-bottom: 11px;
+}
+
+#messStatusText {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.statusopen {
+    color: green;
+}
+
+.statusclosed {
+    color: red;
+}
+
+.togglebtn {
+    background-color: #f5a623;
+    color: #222222;
+    border: none;
+    padding: 7px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* dashboard */
+.dasharea {
+    margin-bottom: 30px;
+}
+
+.dasharea h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.dashbox {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.dashbox .dnum {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+.dashbox .dlabel {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* leaderboard */
+.lbtable {
+    margin-bottom: 30px;
+}
+
+.lbtable h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+/* profile section */
+.profsec {
+    margin-bottom: 30px;
+}
+
+.profsec h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.profcard {
+    border: 1px solid #bbbbbb;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.12);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+
+.profinner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profimg {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #999999;
+    margin-right: 22px;
+    flex-shrink: 0;
+}
+
+.profdetails {
+    flex: 1;
+}
+
+.profdetails h5 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.proftable {
+    font-size: 14px;
+}
+
+.profkey {
+    width: 140px;
+}
+
+.skillstitle {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.skillslist {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.skillslist li {
+    margin-bottom: 5px;
+}
+
+.editbtn {
+    background-color: #f5a623;
+    color: #222222;
+    border: none;
+    padding: 7px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#editmsg {
+    font-size: 13px;
+    color: #555555;
+    margin-top: 6px;
+}

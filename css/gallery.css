@@ -1,0 +1,281 @@
+.galpagetitle {
+    padding: 22px 0 10px 0;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 20px;
+}
+
+.galpagetitle h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 4px;
+}
+
+.gallerysec {
+    margin-bottom: 30px;
+}
+
+.gallerysec h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.imggrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.imgbox {
+    overflow: hidden;
+}
+
+.imgbox img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.overlapsec {
+    margin-bottom: 50px;
+}
+
+.overlapsec h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.overlapwrap {
+    position: relative;
+    height: 230px;
+    margin-bottom: 13px;
+}
+
+.overlapwrap img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    position: absolute;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+}
+
+.img-z1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-z2 {
+    top: 20px;
+    left: 40px;
+    z-index: 2;
+}
+
+.img-z3 {
+    top: 40px;
+    left: 80px;
+    z-index: 3;
+}
+
+/* image with caption */
+.captionsec {
+    margin-bottom: 30px;
+}
+
+.captionsec h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.captionbox {
+    position: relative;
+    display: inline-block;
+}
+
+.captionbox img {
+    width: 380px;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.imgcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* facilities with hover tooltip */
+.facilitiessec {
+    margin-bottom: 30px;
+}
+
+.facilitiessec h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.facbox {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.facbox img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.factooltip {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 13px;
+    z-index: 5;
+}
+
+/* mess menu */
+.messtable {
+    margin-bottom: 30px;
+}
+
+.messtable h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+/* mess photos */
+.messphotos {
+    margin-bottom: 30px;
+}
+
+.messphotos h4 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.messphotos img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* hostel rules button */
+.ruleswrap {
+    margin-bottom: 22px;
+}
+
+.rulesbtn {
+    background-color: #f5a623;
+    color: #222222;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* modal */
+.modaloverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.55);
+    z-index: 999;
+}
+
+.modalbox {
+    background-color: #ffffff;
+    width: 480px;
+    margin: 100px auto;
+    padding: 25px;
+    position: relative;
+    z-index: 1000;
+    border: 1px solid #cccccc;
+}
+
+.modalbox h5 {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.modalbox p,
+.modalbox li {
+    font-size: 14px;
+}
+
+.closebtn {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* z-index layering demo */
+.zdemohead {
+    color: #003366;
+    margin-bottom: 13px;
+}
+
+.zdivwrap {
+    position: relative;
+    height: 140px;
+    margin-bottom: 60px;
+}
+
+.colordiv {
+    position: absolute;
+    width: 180px;
+    height: 90px;
+    padding: 8px;
+    font-size: 13px;
+    color: #222222;
+}
+
+.cd1 {
+    background-color: #f5a623;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.cd2 {
+    background-color: #5bc0de;
+    top: 15px;
+    left: 60px;
+    z-index: 2;
+}
+
+.cd3 {
+    background-color: #d9534f;
+    top: 30px;
+    left: 120px;
+    z-index: 3;
+    color: #ffffff;
+}
+
+.cd4 {
+    background-color: #5cb85c;
+    top: 10px;
+    left: 200px;
+    z-index: 2;
+}
